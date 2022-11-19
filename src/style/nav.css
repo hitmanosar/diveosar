@@ -1,0 +1,9 @@
+.bg{
+   background-color: black;
+  
+}
+
+
+.dropdown .dropdown-item:hover{
+   background-color: blue;
+}

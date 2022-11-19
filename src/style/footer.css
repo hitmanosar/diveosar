@@ -1,0 +1,15 @@
+.fimg img{
+    border-radius: 2%;
+    transition: all 1s;
+}
+
+.fimg img:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+.faa a{
+    text-decoration: none;
+    color : black;
+   
+}
