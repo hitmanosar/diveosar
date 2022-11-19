@@ -54,7 +54,7 @@ function Contact() {
             <div className="col text-center">
               <RubberBand>
                 {" "}
-                <img src={con} width="20%" className="text-center" alt="" />
+                <img src={conss} width="20%" className="text-center" alt="" />
               </RubberBand>
             </div>
           </div>
