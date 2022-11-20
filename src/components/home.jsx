@@ -69,7 +69,7 @@ function Home() {
         setloads(false);
       }, 1000);
     };
-  }, []);
+  });
 
   if (loads == true) {
     return (
@@ -81,7 +81,8 @@ function Home() {
         <Footer className="mt-5" />
       </React.Fragment>
     );
-  } else {
+  }
+   else {
     return (
       <div>
         <Nav />
