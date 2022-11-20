@@ -33,7 +33,7 @@ function About() {
         setloads(false);
       }, 1000);
     };
-  }, [loads]);
+  });
 
   if (loads == true) {
     return (
