@@ -26,64 +26,39 @@ function About() {
   const [loads, setloads] = useState(true);
 
   useEffect(() => {
-    return () => {
+   
       console.log("loading finished");
 
       setTimeout(() => {
         setloads(false);
       }, 1000);
-    };
+  
   },[]);
 
 
   
 
-  // if (loads == true) {
-  //   return (
-  //     <React.Fragment>
-  //       <Nav />
-  //       <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
-  //         <Loading />
-  //       </div>
-  //       <Footer className="mt-5" />
-  //     </React.Fragment>
-  //   );
-  // }
-   
+  if (loads == true) {
     return (
+      <React.Fragment>
+        <Nav />
+        <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
+          <Loading />
+        </div>
+        <Footer className="mt-5" />
+      </React.Fragment>
+    );
+  }
+   
+   else { return (
 
-    //  {(loads==true) ?    <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
-    //          <Loading />
-    //        </div> : loads}
-
-     
+   
    
       <React.Fragment>
         <Nav />
 
-          {(loads==true) ?    <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
-              <Loading />
-            </div> :  <div className="ii text-center">
-          <span>
-            {" "}
-            <Link
-              className="fs-3 fw-bold text-white"
-              style={{ textDecoration: "none" }}
-              to="/"
-            >
-              Home
-            </Link>{" "}
-          </span>
-          <span className="fs-3 fw-bold text-warning mt-4">About</span>
-        </div>
-            
-            
-            
-            
-            
-            }
-   
-
+         
+        
         <div className="ii text-center">
           <span>
             {" "}
@@ -349,7 +324,7 @@ function About() {
         <Footer />
       </React.Fragment>
     );
-  
+   }
 }
 
 export default About;
