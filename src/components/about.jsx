@@ -26,17 +26,12 @@ function About() {
   const [loads, setloads] = useState(true);
 
   useEffect(() => {
-   
-      console.log("loading finished");
+    console.log("loading finished");
 
-      setTimeout(() => {
-        setloads(false);
-      }, 1000);
-  
-  },[]);
-
-
-  
+    setTimeout(() => {
+      setloads(false);
+    }, 1000);
+  }, []);
 
   if (loads == true) {
     return (
@@ -48,17 +43,11 @@ function About() {
         <Footer className="mt-5" />
       </React.Fragment>
     );
-  }
-   
-   else { return (
-
-   
-   
+  } else {
+    return (
       <React.Fragment>
         <Nav />
 
-         
-        
         <div className="ii text-center">
           <span>
             {" "}
@@ -324,7 +313,7 @@ function About() {
         <Footer />
       </React.Fragment>
     );
-   }
+  }
 }
 
 export default About;

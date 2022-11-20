@@ -71,19 +71,19 @@ function Home() {
     };
   });
 
-  // if (loads == true) {
-  //   return (
-  //     <React.Fragment>
-  //       <Nav />
-  //       <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
-  //         <Loading />
-  //       </div>
-  //       <Footer className="mt-5" />
-  //     </React.Fragment>
-  //   );
-  // }
-  
+  if (loads == true) {
     return (
+      <React.Fragment>
+        <Nav />
+        <div className="container d-flex align-items-center justify-content-center text-center mt-5 p-5 rounded">
+          <Loading />
+        </div>
+        <Footer className="mt-5" />
+      </React.Fragment>
+    );
+  }
+  
+  else {  return (
       <div>
         <Nav />
         <Carousel />
@@ -861,7 +861,7 @@ function Home() {
         <Footer />
       </div>
     );
-  
+  }
 }
 
 export default Home;

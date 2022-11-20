@@ -23,13 +23,11 @@ function Blog() {
   const [loads, setloads] = useState(true);
 
   useEffect(() => {
-    return () => {
-      console.log("loading finished");
+    console.log("loading finished");
 
-      setTimeout(() => {
-        setloads(false);
-      }, 1000);
-    };
+    setTimeout(() => {
+      setloads(false);
+    }, 1000);
   }, []);
 
   if (loads == true) {
