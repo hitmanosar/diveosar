@@ -69,7 +69,7 @@ function Home() {
         setloads(false);
       }, 1000);
    
-  });
+  },[]);
 
   if (loads == true) {
     return (
